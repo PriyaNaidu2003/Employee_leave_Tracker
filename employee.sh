@@ -20,11 +20,19 @@ add_employee() {
     read -p "Designation: " designation
     read -p "Salary: " salary
     read -p "Date of Joining (dd-mm-yyyy): " doj
+
+    # Check if the employee already exists based on name and doj
+    if grep -q "^.*|$name|$dept|$designation|$salary|$doj|" employees.txt; then
+        echo "An employee with the same details already exists."
+        return
+    fi
+
     emp_id=$(generate_employee_id)
     echo "$emp_id|$name|$dept|$designation|$salary|$doj|$casual_leave|$employee_leave|" >> employees.txt
     echo "Employee ID is $emp_id"
     echo "Employee added successfully!"
 }
+
 
 apply_leave() {
     read -p "Enter Employee ID: " emp_id
