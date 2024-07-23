@@ -1,4 +1,4 @@
-Employee Management System
+Employee Leave Tracker
 
 Overview
 
