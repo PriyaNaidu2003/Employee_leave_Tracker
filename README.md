@@ -3,7 +3,7 @@ Employee Leave Tracker
 Overview
 
 
-This Employee Management System is a command-line tool implemented in Bash for managing employee records. It is designed to run in a Linux environment but can also be executed in Git Bash on Windows. 
+This Employee Leave Tracker is a command-line tool implemented in Bash for managing employee records. It is designed to run in a Linux environment but can also be executed in Git Bash on Windows. 
 
 The system offers the following functionalities:
 
